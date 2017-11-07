@@ -7,7 +7,11 @@
     "egg": "^1.9.0",
     "egg-mongoose": "^2.1.1",
     "egg-scripts": "^2.1.0",
-    "egg-validate": "^1.0.0"
+    "egg-validate": "^1.0.0",
+    "cheerio": "*",
+    "superagent": "*",
+    "async": "*",
+    "mongodb": "*"
   },
   "devDependencies": {
     "autod": "^2.10.0",
@@ -19,7 +23,10 @@
     "eslint": "^4.9.0",
     "eslint-config-egg": "^5.1.0",
     "webstorm-disable-index": "^1.2.0",
-    "cheerio": "*"
+    "cheerio": "*",
+    "superagent": "*",
+    "async": "*",
+    "mongodb": "*"
   },
   "engines": {
     "node": ">=6.0.0"
