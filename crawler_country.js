@@ -77,6 +77,7 @@ const dbInput = async function() {
   // 当所有任务都执行完以后，将调用该函数
   q.drain = function() {
     console.log('所有数据插入完成...');
+    return;
   };
   q.push(data);// 将所有任务加入队列
 };

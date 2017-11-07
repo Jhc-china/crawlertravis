@@ -7,6 +7,6 @@ services:
 install:
   - npm i npminstall && npminstall
 script:
-  - node crawler_country.js && npm run ci
+  - node crawler_country && npm run ci
 after_script:
   - npminstall codecov && codecov
