@@ -6,8 +6,8 @@ services:
   - mongodb
 before_script:
   - mongo --port 27017 --eval 'db.createCollection("country");'
-  - mongo --port 27017 --eval 'db.country.insert({CNname:"中国",ENname:"CHINA",Shortening:"CN",contryNum:156,countryTelnum:86});'
-  - mongo --port 27017 --eval 'db.country.insert({CNname:"日本",ENname:"JAPAN",Shortening:"JP",contryNum:392,countryTelnum:81});'
+  - mongo --port 27017 --eval 'db.country.insert({CNname:"中国",ENname:"CHINA",Shortening:"CN",countryNum:156,countryTelnum:86});'
+  - mongo --port 27017 --eval 'db.country.insert({CNname:"日本",ENname:"JAPAN",Shortening:"JP",countryNum:392,countryTelnum:81});'
 install:
   - npm i npminstall && npminstall
 script:
