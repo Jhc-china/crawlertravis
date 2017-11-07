@@ -6,7 +6,7 @@ node_js:
 services:
   - mongodb
 before_script:
-  - mongo mydb_test --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'
+  - mongo mydb_test --eval 'db.createCountry({CNname:"中国",ENname:"CHINA",Shortening:"CN",contrynum:156,countryTelnum:86});'
 install:
   - npm i npminstall && npminstall
 script:
