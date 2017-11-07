@@ -80,7 +80,7 @@ const dbInput = async function() {
   };
   q.push(data);// 将所有任务加入队列
 
-  /* 
+/* 
 const data = await parseHtml();
   for(let i = 0; i < data.length; i++) {
     MongoClient.connect(DB_CONN_STR, function(err, db) {
