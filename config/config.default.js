@@ -30,7 +30,7 @@ module.exports = appInfo => {
   };
 
   config.mongoose = {
-    url: 'mongodb://127.0.0.1:27017/mytest', // 数据库的位置，在我本地的电脑是在127.0.0.1:27017/mytest上
+    url: 'mongodb://127.0.0.1/mytest', // 数据库的位置，在我本地的电脑是在127.0.0.1:27017/mytest上
     options: {},
   };
 
