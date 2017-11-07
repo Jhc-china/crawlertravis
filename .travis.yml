@@ -6,6 +6,7 @@ node_js:
 services:
   - mongodb
 before_script:
+  - sleep 10
   - mongo mytest --eval 'use Country;'
   - mongo mytest --eval 'db.Country.insert({CNname:"中国",ENname:"CHINA",Shortening:"CN",contrynum:156,countryTelnum:86});'
   - mongo --eval 'dbs;'
