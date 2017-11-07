@@ -6,7 +6,7 @@ node_js:
 services:
   - mongodb
 before_script:
-  - mongo --port 27017 --eval 'db.createCollection("Country");db.Country.insert({CNname:"中国",ENname:"CHINA",Shortening:"CN",contrynum:156,countryTelnum:86});'
+  - mongo --port 27017 --eval 'use mytest;db.createCollection("Country");db.Country.insert({CNname:"中国",ENname:"CHINA",Shortening:"CN",contrynum:156,countryTelnum:86});'
 install:
   - npm i npminstall && npminstall
 script:
