@@ -1,0 +1,16 @@
+sudo: false
+language: node_js
+node_js:
+  - '6'
+  - '8'
+services:
+  - mongodb
+before_script:
+  - sleep 15
+  - mongo mytest --eval 'db.country({CNname:"中国",ENname:"CHINA",Shortening:"CN",countryNum:156,countryTelnum:86});'
+install:
+  - npm i npminstall && npminstall
+script:
+  - npm run ci
+after_script:
+  - npminstall codecov && codecov
